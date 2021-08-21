@@ -4,9 +4,9 @@ FROM tomcat:8.0.20-jre8
 # automation
 COPY target/*.war /usr/local/tomcat/webapps/maven-web-app.war
 
-FROM alpine
+#FROM alpine
 
-COPY --from=open-policy-agent/conftest:v0.18.2 /conftest /conftest
+#COPY --from=open-policy-agent/conftest:v0.18.2 /conftest /conftest
 
 
 #FROM alpine
